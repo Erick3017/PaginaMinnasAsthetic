@@ -1,11 +1,371 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Minnas Beauty Aesthetics — Bisutería, Joyería &amp; Belleza</title>
+    <meta name="description"
+        content="Minnas Beauty Aesthetics: bisutería y joyería, manicure, pedicura, faciales, lifting de pestañas y depilación con cera. Reserva por WhatsApp.">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header" id="siteHeader">
+        <div class="wrap header-inner">
+            <a href="#top" class="brand">
+                <img src="assets/logo.png" alt="Minnas Beauty Aesthetics" class="brand-logo">
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="#servicios">Servicios</a>
+                <a href="#bisuteria">Bisutería</a>
+                <a href="#nosotras">Nosotras</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <a class="btn btn-gold btn-small header-cta" data-service="Información general" href="#">
+                <span>Reservar</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- ================= HERO ================= -->
+        <section class="hero">
+            <div class="hero-sparkles" aria-hidden="true">
+                <span class="spark spark-1"></span>
+                <span class="spark spark-2"></span>
+                <span class="spark spark-3"></span>
+                <span class="spark spark-4"></span>
+                <span class="spark spark-5"></span>
+            </div>
+
+            <div class="wrap hero-inner">
+                <p class="eyebrow eyebrow-light"><i class="glyph"></i>Bisutería &amp; Belleza en un solo lugar</p>
+                <h1 class="hero-title">
+                    Brilla por fuera,<br>
+                    <em>florece</em> por dentro.
+                </h1>
+                <p class="hero-sub">
+                    Joyería y bisutería seleccionada con amor, más los servicios de belleza que tu piel,
+                    manos, pies, mirada y silueta merecen. Todo en un ambiente pensado para consentirte.
+                </p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-gold" data-service="Información general">Reservar por WhatsApp</a>
+                    <a href="#servicios" class="btn btn-ghost-light">Ver catálogo</a>
+                </div>
+            </div>
+
+            <a href="#servicios" class="scroll-cue" aria-label="Bajar a servicios">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- ================= MARQUEE / VITRINA ================= -->
+        <section class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Bisutería &amp; Joyería</span><i class="glyph glyph-inline"></i>
+                <span>Manicure</span><i class="glyph glyph-inline"></i>
+                <span>Pedicura</span><i class="glyph glyph-inline"></i>
+                <span>Faciales</span><i class="glyph glyph-inline"></i>
+                <span>Lifting de Pestañas</span><i class="glyph glyph-inline"></i>
+                <span>Depilación con Cera</span><i class="glyph glyph-inline"></i>
+                <span>Bisutería &amp; Joyería</span><i class="glyph glyph-inline"></i>
+                <span>Manicure</span><i class="glyph glyph-inline"></i>
+                <span>Pedicura</span><i class="glyph glyph-inline"></i>
+                <span>Faciales</span><i class="glyph glyph-inline"></i>
+                <span>Lifting de Pestañas</span><i class="glyph glyph-inline"></i>
+                <span>Depilación con Cera</span><i class="glyph glyph-inline"></i>
+            </div>
+        </section>
+
+        <!-- ================= SERVICIOS ================= -->
+        <section class="section" id="servicios">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow"><i class="glyph"></i>Nuestros servicios</p>
+                    <h2 class="section-title">Un ritual de belleza <em>a tu medida</em></h2>
+                    <p class="section-sub">Elige el servicio que tu cuerpo pide y resérvalo directamente por WhatsApp.
+                        Sin filas, sin formularios largos.</p>
+                </div>
+
+                <div class="card-grid">
+
+                    <article class="s-card">
+                        <span class="s-card-spark" aria-hidden="true"></span>
+                        <div class="s-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 6c3 6 9 8 9 16a9 9 0 1 1-18 0c0-8 6-10 9-16Z" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linejoin="round" />
+                                <path d="M24 20v9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>Manicure</h3>
+                        <p>Cuidado completo de cutícula y esmaltado clásico o semipermanente, con acabado impecable y
+                            duradero.</p>
+                        <a href="#" class="s-link" data-service="Manicure">Reservar <span>→</span></a>
+                    </article>
+
+                    <article class="s-card">
+                        <span class="s-card-spark" aria-hidden="true"></span>
+                        <div class="s-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M14 40c0-9 4-13 4-20a6 6 0 1 1 12 0c0 7 4 11 4 20" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" />
+                                <path d="M14 40h20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>Pedicura</h3>
+                        <p>Exfoliación, hidratación profunda y esmaltado para unos pies suaves y listos para lucirse.
+                        </p>
+                        <a href="#" class="s-link" data-service="Pedicura">Reservar <span>→</span></a>
+                    </article>
+
+                    <article class="s-card">
+                        <span class="s-card-spark" aria-hidden="true"></span>
+                        <div class="s-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="15" stroke="currentColor" stroke-width="1.6" />
+                                <path d="M18 21c1-2 3-3 6-3s5 1 6 3M18 29c1.6 2 3.6 3 6 3s4.4-1 6-3"
+                                    stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>Faciales</h3>
+                        <p>Limpieza profunda, hidratación y técnicas relajantes que devuelven la luminosidad a tu
+                            rostro.</p>
+                        <a href="#" class="s-link" data-service="Facial">Reservar <span>→</span></a>
+                    </article>
+
+                    <article class="s-card">
+                        <span class="s-card-spark" aria-hidden="true"></span>
+                        <div class="s-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M8 26c8-10 24-10 32 0" stroke="currentColor" stroke-width="1.6"
+                                    stroke-linecap="round" />
+                                <path d="M13 24l-3-5M20 21.5l-1.5-5.5M27 21.5l1.5-5.5M34 24l3-5" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>Lifting de Pestañas</h3>
+                        <p>Curvatura y volumen natural que dura semanas, para una mirada despierta sin maquillaje.</p>
+                        <a href="#" class="s-link" data-service="Lifting de pestañas">Reservar <span>→</span></a>
+                    </article>
+
+                    <article class="s-card">
+                        <span class="s-card-spark" aria-hidden="true"></span>
+                        <div class="s-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 8c6 4 12 11 12 19a12 12 0 1 1-24 0c0-8 6-15 12-19Z" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Depilación con Cera</h3>
+                        <p>Piel suave por más tiempo con cera de calidad y técnica cuidadosa, minimizando la molestia.
+                        </p>
+                        <a href="#" class="s-link" data-service="Depilación con cera">Reservar <span>→</span></a>
+                    </article>
+
+                    <article class="s-card">
+                        <span class="s-card-spark" aria-hidden="true"></span>
+                        <div class="s-icon">
+                            <svg viewBox="0 0 48 48" fill="none">
+                                <path d="M24 6l6 8h-12l6-8Z" stroke="currentColor" stroke-width="1.6"
+                                    stroke-linejoin="round" />
+                                <path d="M12 14h24l-5 26a2 2 0 0 1-2 2H19a2 2 0 0 1-2-2L12 14Z" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3>Combos de Belleza</h3>
+                        <p>Combina manos, pies, rostro y mirada en una sola cita. Pregunta por nuestros paquetes.</p>
+                        <a href="#" class="s-link" data-service="Combo de belleza">Reservar <span>→</span></a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= BISUTERÍA ================= -->
+        <section class="section section-sage" id="bisuteria">
+            <div class="wrap">
+                <div class="section-head">
+                    <p class="eyebrow"><i class="glyph"></i>Bisutería &amp; Joyería</p>
+                    <h2 class="section-title">Piezas que cuentan <em>tu historia</em></h2>
+                    <p class="section-sub">Una selección curada de accesorios para cada momento. Escríbenos por WhatsApp
+                        para ver fotos, precios y disponibilidad al instante.</p>
+                </div>
+
+                <div class="card-grid product-grid">
+
+                    <article class="p-card">
+                        <div class="p-visual p-visual-1" aria-hidden="true"><span class="spark-sm"></span></div>
+                        <h3>Aretes</h3>
+                        <p>Argollas, colgantes y stones para el día a día o para brillar en una noche especial.</p>
+                        <a href="#" class="s-link" data-service="Catálogo de aretes">Ver catálogo <span>→</span></a>
+                    </article>
+
+                    <article class="p-card">
+                        <div class="p-visual p-visual-2" aria-hidden="true"><span class="spark-sm"></span></div>
+                        <h3>Collares</h3>
+                        <p>Cadenas finas, chokers y piezas statement para combinar con cualquier outfit.</p>
+                        <a href="#" class="s-link" data-service="Catálogo de collares">Ver catálogo <span>→</span></a>
+                    </article>
+
+                    <article class="p-card">
+                        <div class="p-visual p-visual-3" aria-hidden="true"><span class="spark-sm"></span></div>
+                        <h3>Pulseras</h3>
+                        <p>Diseños delicados y ajustables, ideales para apilar o para regalar.</p>
+                        <a href="#" class="s-link" data-service="Catálogo de pulseras">Ver catálogo <span>→</span></a>
+                    </article>
+
+                    <article class="p-card">
+                        <div class="p-visual p-visual-4" aria-hidden="true"><span class="spark-sm"></span></div>
+                        <h3>Anillos</h3>
+                        <p>Bandas sencillas y piezas con brillo, en distintas tallas y acabados.</p>
+                        <a href="#" class="s-link" data-service="Catálogo de anillos">Ver catálogo <span>→</span></a>
+                    </article>
+
+                    <article class="p-card">
+                        <div class="p-visual p-visual-1" aria-hidden="true"><span class="spark-sm"></span></div>
+                        <h3>Sets Exclusivos</h3>
+                        <p>Conjuntos combinados (aretes + collar + pulsera) para un look completo y coordinado.</p>
+                        <a href="#" class="s-link" data-service="Catálogo de sets exclusivos">Ver catálogo
+                            <span>→</span></a>
+                    </article>
+
+                    <article class="p-card">
+                        <div class="p-visual p-visual-2" aria-hidden="true"><span class="spark-sm"></span></div>
+                        <h3>Edición Limitada</h3>
+                        <p>Piezas de temporada, disponibles solo por tiempo y cantidad limitada.</p>
+                        <a href="#" class="s-link" data-service="Edición limitada">Ver catálogo <span>→</span></a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= NOSOTRAS / BRAND STORY ================= -->
+        <section class="story" id="nosotras">
+            <div class="story-sparkles" aria-hidden="true">
+                <span class="spark spark-6"></span>
+                <span class="spark spark-7"></span>
+            </div>
+            <div class="wrap story-inner">
+                <div class="story-text">
+                    <p class="eyebrow eyebrow-light"><i class="glyph"></i>Nosotras</p>
+                    <h2 class="section-title story-title">Belleza que se nota, <em>cuidado que se siente</em></h2>
+                    <p>
+                        En Minnas creemos que verte bien empieza por sentirte bien. Por eso combinamos técnica,
+                        productos de calidad y un trato cercano en cada servicio &mdash;y una selección de bisutería
+                        pensada para que encuentres esa pieza que te hace sentir tú misma, solo que un poco más
+                        brillante.
+                    </p>
+                    <div class="story-points">
+                        <div class="story-point">
+                            <span class="glyph"></span>
+                            <div>
+                                <h4>Atención personalizada</h4>
+                                <p>Cada cita se adapta a lo que tu piel, uñas o mirada necesitan.</p>
+                            </div>
+                        </div>
+                        <div class="story-point">
+                            <span class="glyph"></span>
+                            <div>
+                                <h4>Productos de calidad</h4>
+                                <p>Trabajamos con marcas confiables para resultados que duran.</p>
+                            </div>
+                        </div>
+                        <div class="story-point">
+                            <span class="glyph"></span>
+                            <div>
+                                <h4>Reserva sin complicaciones</h4>
+                                <p>Todo se coordina directo por WhatsApp, a tu ritmo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-mark" aria-hidden="true">
+                    <img src="assets/logo.png" alt="" class="story-logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CTA BANNER ================= -->
+        <section class="cta-banner" id="contacto">
+            <div class="cta-sparkles" aria-hidden="true">
+                <span class="spark spark-8"></span>
+                <span class="spark spark-9"></span>
+            </div>
+            <div class="wrap cta-inner">
+                <p class="eyebrow eyebrow-light"><i class="glyph"></i>Reserva tu cita</p>
+                <h2 class="cta-title">¿Lista para brillar?</h2>
+                <p class="cta-sub">Escríbenos por WhatsApp y con gusto te ayudamos a elegir tu servicio o pieza ideal.
+                </p>
+                <a href="#" class="btn btn-gold btn-large" data-service="Información general">Chatear por WhatsApp</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="Minnas Beauty Aesthetics" class="footer-logo">
+                <p>Bisutería, joyería y servicios de belleza en un solo lugar.</p>
+            </div>
+
+            <div class="footer-col">
+                <h5>Explorar</h5>
+                <a href="#servicios">Servicios</a>
+                <a href="#bisuteria">Bisutería</a>
+                <a href="#nosotras">Nosotras</a>
+            </div>
+
+            <div class="footer-col">
+                <h5>Contacto</h5>
+                <a href="#" data-service="Información general">WhatsApp</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+
+            <div class="footer-col">
+                <h5>Horario</h5>
+                <p class="footer-plain">Lunes a sábado<br>9:00 a.m. — 6:00 p.m.</p>
+            </div>
+        </div>
+        <div class="wrap footer-bottom">
+            <p>&copy; <span id="year"></span> Minnas Beauty Aesthetics. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="#" class="whatsapp-fab" data-service="Información general" aria-label="Escribir por WhatsApp">
+        <svg viewBox="0 0 32 32" fill="none">
+            <path
+                d="M16 3C9 3 3.3 8.6 3.3 15.5c0 2.5.7 4.8 1.9 6.8L3 29l6.9-2.2c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.6 12.7-12.5S23 3 16 3Z"
+                fill="currentColor" />
+            <path
+                d="M22 19.2c-.3.9-1.7 1.7-2.6 1.8-.7.1-1.6.2-4.7-1-4-1.6-6.5-5.6-6.7-5.9-.2-.3-1.6-2.1-1.6-4s1-2.8 1.4-3.2c.4-.4.8-.5 1.1-.5h.8c.3 0 .6 0 .9.7l1.2 3c.1.3.1.5 0 .7l-.6.9c-.2.2-.3.4-.1.7.8 1.5 2.5 3.2 4 4 .3.2.5.1.7-.1l.9-1c.2-.3.5-.2.7-.1l2.8 1.3c.3.1.5.2.6.4.1.2.1 1-.2 1.9Z"
+                fill="var(--c-forest)" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
