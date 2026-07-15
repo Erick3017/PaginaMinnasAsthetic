@@ -35,6 +35,10 @@ html {
     scroll-behavior: smooth;
 }
 
+[id] {
+    scroll-margin-top: 96px;
+}
+
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -248,13 +252,13 @@ button:focus-visible {
 }
 
 .brand-logo {
-    height: 80px;
+    height: 68px;
     width: auto;
     transition: height .4s var(--ease);
 }
 
 .site-header.is-scrolled .brand-logo {
-    height: 70px;
+    height: 54px;
 }
 
 .main-nav {
@@ -680,16 +684,95 @@ button:focus-visible {
     overflow: hidden;
 }
 
-.p-visual img {
+.p-track {
+    display: flex;
+    height: 100%;
+    transition: transform .45s var(--ease);
+}
+
+.p-track img {
+    flex: 0 0 100%;
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform .5s var(--ease);
 }
 
-.p-card:hover .p-visual img {
-    transform: scale(1.06);
+.p-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(34, 31, 22, .38);
+    color: var(--c-cream);
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .3s var(--ease), background .3s var(--ease);
+    z-index: 3;
+}
+
+.p-visual:hover .p-nav,
+.p-nav:focus-visible {
+    opacity: 1;
+}
+
+@media (hover: none) {
+    .p-nav {
+        opacity: .82;
+    }
+}
+
+.p-nav:hover {
+    background: rgba(34, 31, 22, .6);
+}
+
+.p-nav-prev {
+    left: 10px;
+}
+
+.p-nav-next {
+    right: 10px;
+}
+
+.p-visual[data-count="1"] .p-nav,
+.p-visual[data-count="1"] .p-dots {
+    display: none;
+}
+
+.p-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    z-index: 3;
+}
+
+.p-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(246, 242, 231, .55);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background .3s var(--ease), transform .3s var(--ease);
+}
+
+.p-dot.is-active {
+    background: var(--c-gold-light);
+    transform: scale(1.3);
 }
 
 /* =========================================================
@@ -853,7 +936,7 @@ button:focus-visible {
 }
 
 .footer-logo {
-    height: 80px;
+    height: 40px;
     width: auto;
     margin-bottom: 14px;
     filter: brightness(1.05);
@@ -920,8 +1003,8 @@ button:focus-visible {
 }
 
 .whatsapp-fab svg {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 .whatsapp-fab:hover {
@@ -954,6 +1037,10 @@ button:focus-visible {
 }
 
 @media (max-width: 720px) {
+    [id] {
+        scroll-margin-top: 82px;
+    }
+
     .main-nav {
         position: absolute;
         top: 100%;
