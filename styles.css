@@ -248,13 +248,13 @@ button:focus-visible {
 }
 
 .brand-logo {
-    height: 46px;
+    height: 80px;
     width: auto;
     transition: height .4s var(--ease);
 }
 
 .site-header.is-scrolled .brand-logo {
-    height: 38px;
+    height: 70px;
 }
 
 .main-nav {
@@ -547,7 +547,7 @@ button:focus-visible {
     background: var(--c-cream-2);
     border: 1px solid rgba(69, 79, 49, .16);
     border-radius: var(--radius-l);
-    padding: 38px 30px 30px;
+    padding: 0 0 30px;
     transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
     overflow: hidden;
 }
@@ -578,6 +578,7 @@ button:focus-visible {
     opacity: 0;
     transform: scale(.4) rotate(-20deg);
     transition: opacity .35s var(--ease), transform .35s var(--ease);
+    z-index: 2;
 }
 
 .s-card:hover .s-card-spark {
@@ -585,16 +586,34 @@ button:focus-visible {
     transform: scale(1) rotate(0deg);
 }
 
-.s-icon {
-    width: 56px;
-    height: 56px;
-    color: var(--c-forest);
-    margin-bottom: 18px;
+.s-image {
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 22px;
 }
 
-.s-icon svg {
+.s-image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .5s var(--ease);
+}
+
+.s-card:hover .s-image img {
+    transform: scale(1.06);
+}
+
+.s-card h3,
+.s-card p,
+.s-card .s-link {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.s-card h3 {
+    margin-top: 4px;
 }
 
 .s-card h3 {
@@ -656,28 +675,21 @@ button:focus-visible {
 }
 
 .p-visual {
-    height: 150px;
+    height: 190px;
     position: relative;
+    overflow: hidden;
 }
 
-.p-visual-1 {
-    background: linear-gradient(135deg, var(--c-forest), var(--c-forest-deep));
+.p-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .5s var(--ease);
 }
 
-.p-visual-2 {
-    background: linear-gradient(135deg, var(--c-espresso), var(--c-espresso-deep));
-}
-
-.p-visual-3 {
-    background: linear-gradient(135deg, var(--c-gold-light), var(--c-gold));
-}
-
-.p-visual-4 {
-    background: linear-gradient(135deg, var(--c-sage), var(--c-sage-deep));
-}
-
-.p-visual-3 .spark-sm {
-    background: var(--c-espresso-deep);
+.p-card:hover .p-visual img {
+    transform: scale(1.06);
 }
 
 /* =========================================================
@@ -841,7 +853,7 @@ button:focus-visible {
 }
 
 .footer-logo {
-    height: 40px;
+    height: 80px;
     width: auto;
     margin-bottom: 14px;
     filter: brightness(1.05);
@@ -908,8 +920,8 @@ button:focus-visible {
 }
 
 .whatsapp-fab svg {
-    width: px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .whatsapp-fab:hover {
